@@ -1,5 +1,5 @@
 '''
-This solution is 0(logN) as we start by sorting the list
+This solution is 0(NlogN) as we start by sorting the list
 Start with two pointers left and right as the extremes of the list
 Add left and right and compare with target
 if target is greater than the sum it would make sense to decrease the sum ==> by going lower on the upper bound as it represents the higher weight
