@@ -7,8 +7,6 @@ similarly, if target is smaller than the sum then increase the left bound which 
 then at the end there is a small hack to safeguard against corner cases; but I agree that can be a little more neat
 '''
 
-print("Enter")
-
 class Solution(object):
     def twoSum(self, nums, target):
         """
