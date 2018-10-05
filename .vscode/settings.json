@@ -4,5 +4,6 @@
     "python.unitTest.nosetestsEnabled": false,
     "python.unitTest.pyTestEnabled": false,
     "python.unitTest.promptToConfigure": false,
-    "python.linting.pylintEnabled": false
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
