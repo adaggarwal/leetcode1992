@@ -1,5 +1,5 @@
 '''
-This solution is 0(NlogN) as we start by sorting the list
+The first solution is 0(NlogN) as we start by sorting the list
 Start with two pointers left and right as the extremes of the list
 Add left and right and compare with target
 if target is greater than the sum it would make sense to decrease the sum ==> by going lower on the upper bound as it represents the higher weight
@@ -14,6 +14,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        #this is the problem that you need to sort in this method
         sorted_num_list = sorted(nums)
         left = 0
         right = len(nums) - 1
@@ -33,3 +34,26 @@ class Solution(object):
             elif num2 == nums[e] and r==-1:
                 r = e
         return [l,r]
+
+'''
+    Second method : hash table with one pass O(n)
+'''
+
+class Solution:
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        dictElements = {}
+        if len(nums) == 0:
+            return None
+        else:    
+            for i in range(0, len(nums)):
+                complement = target - nums[i]
+                if complement in dictElements:
+                    return [i,dictElements[complement]]
+                else:    
+                    dictElements[nums[i]] = i
+        return None 

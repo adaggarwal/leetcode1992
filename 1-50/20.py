@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 '''
 20. Valid Parentheses
 
