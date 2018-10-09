@@ -28,7 +28,7 @@ class Solution:
 
 
 # iterative solution
-class Solution:
+class SolutioN:
     def reverseList(self, head):
         prev = None
         while head:
