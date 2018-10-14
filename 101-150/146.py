@@ -42,58 +42,35 @@ than the desired capacity? - is it more? yes? -> then evict the head.next elemen
 '''
 
 class Node:
-    def __init__(self, key, value):
+    def __init__(self, key=None, val = None):
         self.key = key
-        self.value = value
-        self.prev = None
+        self.val = val
         self.next = None
+        self.prev = None
 
-class LRUCache(object):
+class LRUCache:
 
     def __init__(self, capacity):
         """
         :type capacity: int
         """
-        self.head = Node(0,0)
-        self.tail = Node(0,0)
-        self.head.next = self.tail
-        self.tail.prev = self.head
-        self.hashmap = dict()
         self.capacity = capacity
+        self.tail, self.head = Node(None, None), Node(None, None)
+        self.head.next, self.tail.prev = self.tail, self.head
+        self.hash = dict()
 
     def get(self, key):
         """
         :type key: int
         :rtype: int
         """
-        if key in self.hashmap:
-            node = self.hashmap[key]
-            self.remove(node)
-            self.add(node)
-            return node.value
+        if key in self.hash:
+            xnode = self.hash[key]
+            self._remove(xnode)
+            self._add(xnode)
+            return xnode.val
         else:
             return -1
-    
-    def remove(self, node):
-        """
-        :type node: Node
-        :rtype: void
-        """         
-        previous = node.prev
-        nextNode = node.next
-        previous.next = nextNode
-        nextNode.prev = previous
-        
-    def add(self, node):
-        """
-        :type node: Node
-        :rtype void
-        """
-        previousNode = self.tail.prev
-        previousNode.next = node
-        node.prev = previousNode
-        node.next = self.tail
-        self.tail.prev = node
 
     def put(self, key, value):
         """
@@ -101,26 +78,31 @@ class LRUCache(object):
         :type value: int
         :rtype: void
         """
-        
-        if key not in self.hashmap:
-            self.hashmap[key] = Node(key, value)
-            self.add(self.hashmap[key])
+        if key not in self.hash:
+            if self.capacity == len(self.hash):
+                xnode = self.head.next
+                self._remove(xnode)
+                del self.hash[xnode.key]
         else:
-            #node to be removed
-            node = self.hashmap[key]
-            self.remove(node)
-            del self.hashmap[node.key]
+            xnode = self.hash[key]
+            self._remove(xnode)
             
-            #node to be added
-            NodE = Node(key, value)
-            self.add(NodE)
-            self.hashmap[key] = NodE
+        nNode = Node(key, value)
+        self._add(nNode)
+        self.hash[key] = nNode
             
-        #capacity exceeded
-        if len(self.hashmap) > self.capacity:
-            node = self.head.next
-            self.remove(node)
-            del self.hashmap[node.key]
+        
+    
+    def _remove(self, node):
+        node.prev.next = node.next
+        node.next.prev = node.prev
+        
+    def _add(self, node):
+        prev = self.tail.prev
+        self.tail.prev = node
+        node.next = self.tail
+        node.prev = prev
+        prev.next = node
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
