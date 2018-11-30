@@ -1,0 +1,9 @@
+1. Read a problem 
+2. Set a 20(for medium) - 30(for hard) minute timer
+	2.1 10-20 minutes to brainstorm for the approach
+	2.2 10 minutes to come up with the code.
+3. Come up with the best method you can within the that time
+4. In case of failure, find the BKMs(Best Known Methods). 
+5. Even after finding the BKM, dry run it. Understand why it works.
+6. Again, try the logic yourself. Verify with the golden logic until you make it work.
+7. Repeat
