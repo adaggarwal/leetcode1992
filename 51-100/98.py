@@ -27,30 +27,31 @@ Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
              is 5 but its right child's value is 4.
 
 '''
-
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
 #         self.left = None
 #         self.right = None
 
-class Solution(object):
-
-    def findNode(self, root, key):
-        if root == None:
-            return None
-        if root.val == key:
-            return root
-        elif root.val < key:
-            return Solution.findNode(self, root.right, key)
-        else:
-            return Solution.findNode(self, root.left, key)
-
-    def deleteNode(self, root, key):
+class Solution:
+    def isValidBST(self, root):
         """
         :type root: TreeNode
-        :type key: int
-        :rtype: TreeNode
+        :rtype: bool
         """
-        Solution.findNode(self, root, key)
+        if not root:
+            return True
+        stack = []
+        current, vals = root, []
+        while stack or current:
+            while current:
+                stack.append(current)
+                current = current.left
+            current = stack.pop()
+            if vals:
+                if vals[-1]>= current.val:
+                    return False
+            vals.append(current.val)
+            current = current.right            
+        return True
