@@ -5,27 +5,27 @@ Current progress - 0/120
 ## Target 2019 September
 - [ ] Complete 40 questions
 
-###Array
+### Array
 
-####Easy
+#### Easy
 - [ ] 53
 
-####Medium
+#### Medium
 - [ ] 5
 - [ ] 15
 
-####Hard
+#### Hard
 - [ ] 4
 
-###Linked-List
+### Linked-List
 
-####Easy
+#### Easy
 - [ ] 21
 
-####Medium
+#### Medium
 - [ ] 2
 - [ ] 138
 
-####Hard
+#### Hard
 - [ ] 23
 
