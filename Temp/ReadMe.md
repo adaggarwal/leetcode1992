@@ -1,14 +1,14 @@
 # Target for 2019 december
 - [ ] Complete 120 questions
-Current progress - 0/120
+Current progress - 1/120
 
 ## Target 2019 September
-- [ ] Complete 40 questions
+- [ ] Complete 1/40 questions
 
 ### Array
 
 #### Easy
-- [ ] 53
+- [x] 53
 
 #### Medium
 - [ ] 5
