@@ -58,3 +58,12 @@ class Solution(object):
             s[ind] = "".join(element)
             
         return " ".join(s) 
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        s = " ".join([x for x in s.split(" ") if x])
+        s = s[::-1]
+        s = s.split(" ")
+        for i,e in enumerate(s):
+            s[i]= e[::-1]
+        return " ".join(s)
