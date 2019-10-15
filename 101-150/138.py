@@ -103,3 +103,28 @@ class Solution(object):
             headclone = headclone.next
             
         return newNode
+
+
+# Update:
+
+class Solution:
+    def copyRandomList(self, head: 'Node') -> 'Node':
+        # add duplicates to the original list
+        if not head:
+            return head
+        headCopy = head
+        while headCopy:
+            duplicate = Node(headCopy.val,headCopy.next,None)
+            headCopy.next = duplicate
+            headCopy = headCopy.next.next
+        returnHead = head.next
+        current = head
+        while current:
+            current.next.random = current.random.next if current.random else None
+            current = current.next.next
+        current = head
+        while current.next:
+            temp = current.next
+            current.next = current.next.next
+            current = temp
+        return returnHead
