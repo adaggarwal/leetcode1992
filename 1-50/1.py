@@ -40,20 +40,12 @@ class Solution(object):
 '''
 
 class Solution:
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        dictElements = {}
-        if len(nums) == 0:
-            return None
-        else:    
-            for i in range(0, len(nums)):
-                complement = target - nums[i]
-                if complement in dictElements:
-                    return [i,dictElements[complement]]
-                else:    
-                    dictElements[nums[i]] = i
-        return None 
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        dictionary = dict()
+        #loop through the list and add elements to the dict
+        #check if the element's counterpart is already in the dictionary
+        for index,element in enumerate(nums):
+            if (target-element) in dictionary:
+                return [index, dictionary[target-element]]
+            else:
+                dictionary[element] = index
