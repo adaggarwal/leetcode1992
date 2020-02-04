@@ -66,3 +66,42 @@ class Solution(object):
             if temp: result.append(temp)
             temp = []
         return result     
+    
+  #Approach: deque
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+from collections import deque
+
+class Solution:
+    def zigzagLevelOrder(self, root: TreeNode) -> List[List[int]]:
+        retList = []
+        if not root:
+            return retList
+        dQ = deque([root,None])
+        levelList = deque([])
+        addLeft = False
+        while len(dQ)>0:
+            curr = dQ.popleft()
+            if curr:
+                if curr.left:
+                    dQ.append(curr.left)
+                if curr.right:
+                    dQ.append(curr.right)
+                
+                if addLeft:
+                    levelList.appendleft(curr.val)
+                else:
+                    levelList.append(curr.val)
+            else:
+                addLeft = not addLeft
+                if len(dQ)>0:
+                    dQ.append(None)
+                retList.append(levelList)
+                levelList = deque([])
+        return retList
