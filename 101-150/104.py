@@ -25,6 +25,14 @@ return its depth = 3.
 
 '''
 
+
+'''
+
+Time Complexity - O(n)
+Space Complexity - O(n)
+
+'''
+
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -44,3 +52,20 @@ class Solution(object):
         htr = 1 + Solution.maxDepth(self, root.right)
         
         return max(htl,htr)
+
+class Solution:
+    def maxDepth(self, root: TreeNode):
+        maxDep = 0
+        
+        def maxD(r: TreeNode, depth = 0) -> int:
+            if not r:
+                return 
+            depth += 1
+            nonlocal maxDep 
+            maxDep = max(maxDep, depth)
+            maxD(r.left, depth)
+            maxD(r.right, depth)
+            
+        maxD(root)
+        return maxDep
+
