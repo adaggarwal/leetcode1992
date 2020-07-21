@@ -16,5 +16,7 @@ TREE |
 ## MISC
 
 To learn about spaced repetition technique - [Interview Preparation Guide](https://medium.com/@adaggarw/crack-the-contemporary-technical-interview-55bd1b1b87c9)
+
 [Spaced Repetition LeetCode Template](https://docs.google.com/spreadsheets/d/1USAhpvkzCLSqpjSK8NcEXSBlZ03LXL_VNqqn9WZK1Kk/edit?usp=sharing)
+
 [Interview CheatSheet](https://goo.gl/BpZQJU)
