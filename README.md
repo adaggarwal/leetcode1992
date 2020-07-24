@@ -3,9 +3,9 @@
 A collection of leetcode Problems' Solutions.
 
 ## Structure
-TREE |  
-------- |
-[Maximum Depth of Binary Tree](101-150/104.py) |
+Tree |  Design
+------- | ------- |
+[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150\146.py)
 
 
 ## Contribution
