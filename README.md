@@ -5,7 +5,7 @@ A collection of leetcode Problems' Solutions.
 ## Structure
 Tree |  Design
 ------- | ------- |
-[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150\146.py)
+[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150/146.py)
 
 
 ## Contribution
