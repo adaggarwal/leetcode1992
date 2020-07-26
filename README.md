@@ -3,9 +3,9 @@
 A collection of leetcode Problems' Solutions.
 
 ## Structure
-Tree |  Design | DP | Hash-Table | 
+Tree |  Design | DP | Hash-Table 
 ------- | ------- | ------ | 
-[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150/146.py) | [Longest Palindromics Substring](1-50/5.py) | [Two Sum](1-50/1.py) |
+[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150/146.py) | [Longest Palindromics Substring](1-50/5.py) | [Two Sum](1-50/1.py)
 
 
 ## Contribution
