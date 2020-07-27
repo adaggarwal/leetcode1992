@@ -6,10 +6,10 @@ A collection of leetcode Problems' Solutions.
 
 No.  | Question                                                            | Topic/s                                                       | 
 -----| ------------------------------------------------------------------- | --------------------------------------------------------------| 
-104  |[Maximum Depth of Binary Tree](101-150/104.py)                       | Tree, Recursion                                               |
-146  |[LRU Cache](101-150/146.py)                                          | Design, Doubly Linked-List, Hash-Table                        |
-1    |[Two Sum](1-50/1.py)                                                 | Hash-Table, Array, Binary Search                              |
-5    |[Palindromics Substring](1-50/5.py)                                  | Dynamic-Programming, String, Manacher's Algo                  | 
+104  |Maximum Depth of Binary Tree - [py](101-150/104.py)                  | Tree, Recursion                                               |
+146  |LRU Cache - [py](101-150/146.py)                                     | Design, Doubly Linked-List, Hash-Table                        |
+1    |Two Sum - [py](1-50/1.py)                                            | Hash-Table, Array, Binary Search                              |
+5    |Palindromics Substring - [py](1-50/5.py)                             | Dynamic-Programming, String, Manacher's Algo                  | 
 
 ## Contribution
 
