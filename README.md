@@ -3,10 +3,13 @@
 A collection of leetcode Problems' Solutions.
 
 ## Structure
-Tree |  Design | DP | HashTable | 
-------- | ------- | ------ | ------ |
-[Maximum Depth of Binary Tree](101-150/104.py) | [LRU Cache](101-150/146.py) | [Longest Palindromics Substring](1-50/5.py) | [Two Sum](1-50/1.py) |
 
+No.  | Question                                                            | Topic/s                                                       | 
+-----| ------------------------------------------------------------------- | --------------------------------------------------------------| 
+104  |[Maximum Depth of Binary Tree](101-150/104.py)                       | Tree, Recursion                                               |
+146  |[LRU Cache](101-150/146.py)                                          | Design, Doubly Linked-List, Hash-Table                        |
+1    |[Two Sum](1-50/1.py)                                                 | Hash-Table, Array, Binary Search                              |
+5    |[Palindromics Substring](1-50/5.py)                                  | Dynamic-Programming, String, Manacher's Algo                  | 
 
 ## Contribution
 

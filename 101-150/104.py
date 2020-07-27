@@ -40,6 +40,7 @@ Space Complexity - O(n)
 #         self.left = None
 #         self.right = None
 
+# Approach 1
 class Solution(object):
     def maxDepth(self, root):
         """
@@ -53,6 +54,7 @@ class Solution(object):
         
         return max(htl,htr)
 
+# Approach 2
 class Solution:
     def maxDepth(self, root: TreeNode):
         maxDep = 0
