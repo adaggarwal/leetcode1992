@@ -27,6 +27,15 @@ Explanation: The input is: [5,1,4,null,null,3,6]. The root node's value
              is 5 but its right child's value is 4.
 
 '''
+
+'''
+Iteratively putting the elements in the list would result in a sorted list. If not then its not a valid BST
+
+Time - O(n)
+Space - O(n)
+'''
+
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, x):

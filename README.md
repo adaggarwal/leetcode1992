@@ -11,6 +11,7 @@ No.  | Question                                                            | Top
 1    |Two Sum - [py](src/1-50/1.py)                                        | Hash-Table, Array, Binary Search                              |
 5    |Palindromic Substring - [py](src/1-50/5.py)                          | Dynamic-Programming, String, Manacher's Algo                  | 
 96   |Unique Binary Search Trees - [py](src/1-50/96.py)                    | Tree, Dynamic-Programming, Memoization, Recursion             |
+98   |Validate Binary Search Tree - [py](src/51-100/98.py)                 | Tree, Stack                                                   |
 
 ## Contribution
 
