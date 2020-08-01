@@ -12,6 +12,9 @@ No.  | Question                                                            | Top
 5    |Palindromic Substring - [py](src/1-50/5.py)                          | Dynamic-Programming, String, Manacher's Algo                  | 
 96   |Unique Binary Search Trees - [py](src/1-50/96.py)                    | Tree, Dynamic-Programming, Memoization, Recursion             |
 98   |Validate Binary Search Tree - [py](src/51-100/98.py)                 | Tree, Stack                                                   |
+702  |Search in a Sorted Array of Unknown Size - [py](src/701-750/702.py)  | Binary-Search                                                 |
+763  |Partition Labels - [py](src/701-750/763.py)                          | Two-pointers, greedy                                          |
+703  |Kth Largest Element in a Stream - [py](src/701-750/703.py)           | Hash                                                          |
 
 ## Contribution
 
