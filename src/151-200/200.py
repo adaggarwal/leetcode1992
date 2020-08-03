@@ -25,40 +25,50 @@ Output: 3
 
 '''
 
+# Approach 1 - BFS
 
+# Time - O(row*column)
+# Space - O(row*column) -- This can be O(1) if input matrix is changed 
 
 class Solution:
-    def numIslands(self, grid):
-        """
-        :type grid: List[List[str]]
-        :rtype: int
-        """
-        
+    
+    def getNeighbors(self, coordinate) -> list:
+        row,col = coordinate
+        return [(row-1,col), (row,col-1), (row+1,col), (row,col+1)]
+    
+    def isValid(self, coordinate, grid) -> bool:
+        row,col = coordinate
+        if (0<=row<len(grid)) and (0<=col<len(grid[0])):
+            return True
+        return False
+    
+    def isLand(self, coordinate, grid) -> bool:
+        row, col = coordinate
+        if grid[row][col] == "1":
+            return True
+        return False
+    
+    def bfs(self,row,col,visited,grid) -> None:
+        queue = deque([(row,col)])
+        visited.add((row,col))
+        while queue:
+            for _ in range(len(queue)):
+                seed = queue.pop()
+                nList = self.getNeighbors(seed)
+                for element in nList:
+                    if self.isValid(element, grid) and self.isLand(element, grid) and (element not in visited):
+                        queue.append(element)
+                        visited.add(element)
+    
+    def numIslands(self, grid: List[List[str]]) -> int:
+        if (not grid) or (not grid[0]):
+            return 0
+        islands = 0
         visited = set()
-        stack = []
-        islandNo = 0
-
-        for row, rval in enumerate(grid):
-            for col, cval in enumerate(rval):
-                if ((row, col) in visited) or (int(cval) == 0):
+        for row in range(len(grid)):
+            for col in range(len(grid[0])):
+                if (grid[row][col] == "0") or ((row,col) in visited):
                     continue
-        
-                visited.add((row, col))
-                stack.append((row, col))
-                
-                while stack:
-                    
-                    seed = stack.pop()
-                    neighbors = [(seed[0]-1, seed[1]),(seed[0]+1, seed[1]),\
-                    (seed[0], seed[1]-1),(seed[0], seed[1]+1)]
-                    
-                    for nei in neighbors:
-                        if (0<= nei[0] < len(grid)) and ( 0<= nei[1] < len(grid[0]) ) and int(grid[nei[0]][nei[1]]) and (nei not in visited):
-                
-                            
-                            stack.append(nei)
-                            visited.add(nei)
-
-                islandNo += 1                
-
-        return islandNo
+                self.bfs(row,col,visited,grid)
+                islands += 1
+        return islands

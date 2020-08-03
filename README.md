@@ -15,6 +15,7 @@ No.  | Question                                                            | Top
 702  |Search in a Sorted Array of Unknown Size - [py](src/701-750/702.py)  | Binary-Search                                                 |
 763  |Partition Labels - [py](src/701-750/763.py)                          | Two-pointers, greedy                                          |
 703  |Kth Largest Element in a Stream - [py](src/701-750/703.py)           | Hash                                                          |
+200  |Number of Islands - [py](src/151-200/200.py)                         | BFS, DFS, Union Find, graph                                   |
 
 ## Contribution
 
