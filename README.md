@@ -16,6 +16,7 @@ No.  | Question                                                            | Top
 763  |Partition Labels - [py](src/701-750/763.py)                          | Two-pointers, greedy                                          |
 703  |Kth Largest Element in a Stream - [py](src/701-750/703.py)           | Hash                                                          |
 200  |Number of Islands - [py](src/151-200/200.py)                         | BFS, DFS, Union Find, graph                                   |
+54   |Sprial Matrix - [py](src/51-100/54.py)                               | Array                                                         |
 
 ## Contribution
 
