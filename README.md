@@ -7,7 +7,7 @@ A collection of leetcode Problems' Solutions.
 No.  | Question                                                            | Topic/s                                                       | 
 -----| ------------------------------------------------------------------- | --------------------------------------------------------------| 
 104  |Maximum Depth of Binary Tree - [py](src/101-150/104.py)              | Tree, Recursion                                               |
-146  |LRU Cache - [py](src/101-150/146.py)                                 | Design, Doubly Linked-List, Hash-Table                        |
+146  |[LRU Cache](src/101-150/146.md)                                      | Design, Doubly Linked-List, Hash-Table                        |
 1    |Two Sum - [py](src/1-50/1.py)                                        | Hash-Table, Array, Binary Search                              |
 5    |Palindromic Substring - [py](src/1-50/5.py)                          | Dynamic-Programming, String, Manacher's Algo                  | 
 96   |Unique Binary Search Trees - [py](src/1-50/96.py)                    | Tree, Dynamic-Programming, Memoization, Recursion             |
