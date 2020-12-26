@@ -18,6 +18,7 @@ No.  | Question                                                            | Top
 703  |Kth Largest Element in a Stream - [py](src/701-750/703.py)           | Hash                                                          |
 200  |[Number of Islands](src/151-200/200.md)                              | BFS, DFS, Union Find, graph                                   |
 54   |Sprial Matrix - [py](src/51-100/54.py)                               | Array                                                         |
+54   |[Maximum XOR of Two Numbers in an Array](src/401-450/421.md)         | Trie, Bit Manipulation                                        |
 
 ## MISC
 
