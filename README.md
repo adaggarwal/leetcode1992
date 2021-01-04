@@ -19,6 +19,7 @@ No.  | Question                                                            | Top
 200  |[Number of Islands](src/151-200/200.md)                              | BFS, DFS, Union Find, graph                                   |
 54   |Sprial Matrix - [py](src/51-100/54.py)                               | Array                                                         |
 421  |[Maximum XOR of Two Numbers in an Array](src/401-450/421.md)         | Trie, Bit Manipulation                                        |
+1171 |[Maximum XOR of Two Numbers in an Array](src/1151-1200/1171.md)      | Array, Two Sum style, Bit Manipulation                        |
 
 ## MISC
 
