@@ -20,6 +20,7 @@ No.  | Question                                                            | Top
 54   |Sprial Matrix - [py](src/51-100/54.py)                               | Array                                                         |
 421  |[Maximum XOR of Two Numbers in an Array](src/401-450/421.md)         | Trie, Bit Manipulation                                        |
 1171 |[Count good meals](src/1151-1200/1171.md)                            | Array, Two Sum style, Bit Manipulation                        |
+226  |[Invert Binary Tree](src/201-250/226.md)                             | Tree, Recursion                                               |
 
 ## MISC
 
