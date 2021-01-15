@@ -22,6 +22,7 @@ No.  | Question                                                            | Top
 1171 |[Count good meals](src/1151-1200/1171.md)                            | Array, Two Sum style, Bit Manipulation                        |
 226  |[Invert Binary Tree](src/201-250/226.md)                             | Tree, Recursion                                               |
 617  |[Merge Two Binary Trees](src/601-650/617.md)                         | Tree, Recursion                                               |
+253  |[Meeting Rooms II](src/251-300/253.md)                               | Priority Queue/Heap                                           |
 
 ## MISC
 
