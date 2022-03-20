@@ -24,9 +24,12 @@ No.  | Question                                                            | Top
 617  |[Merge Two Binary Trees](src/601-650/617.md)                         | Tree, Recursion                                               |
 253  |[Meeting Rooms II](src/251-300/253.md)                               | Priority Queue/Heap                                           |
 973  |[K Closest Points to Origin](src/951-1000/973.md)                    | Priority Queue/Heap                                           |
+1930 |[Unique Length-3 Palindromic Subsequences](src/1901-1950/1930.md)    | string, set                                                   |
+
 
 ## MISC
 
 1. To learn about spaced repetition technique - [Interview Preparation Guide](https://medium.com/@adaggarw/crack-the-contemporary-technical-interview-55bd1b1b87c9)
 2. [Spaced Repetition LeetCode Template](https://docs.google.com/spreadsheets/d/1USAhpvkzCLSqpjSK8NcEXSBlZ03LXL_VNqqn9WZK1Kk/edit?usp=sharing)
 3. [Interview CheatSheet](https://goo.gl/BpZQJU)
+4. [Python CheatSheet](https://docs.google.com/document/d/1fjtc5DLuQaIyjJ7P_mh5Fo4sf_llhrLSEkq5vvCmOCg/edit?usp=sharing)
