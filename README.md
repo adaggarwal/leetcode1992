@@ -26,7 +26,7 @@ No.  | Question                                                            | Top
 973  |[K Closest Points to Origin](src/951-1000/973.md)                    | Priority Queue/Heap                                           |
 1930 |[Unique Length-3 Palindromic Subsequences](src/1901-1950/1930.md)    | string, set                                                   |
 238  |[Product of Array Except Self](src/201-250/238.md)                   | arrays                                                        |
-238  |[Clone Graph](src/101-150/133.md)                                    | Graph, DFS                                                    |
+133  |[Clone Graph](src/101-150/133.md)                                    | Graph, DFS                                                    |
 
 
 ## MISC
